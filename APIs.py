@@ -51,8 +51,8 @@ def microsoft_process_image(path):
         analyze_url, headers=headers, params=params, data=image_data)
     response.raise_for_status()
 
-    # The 'analysis' object contains various fields that describe the image. The most
-    # relevant caption for the image is obtained from the 'description' property.
+    # The 'analysis' object contains various fields that describe the image. 
+    # The most relevant caption for the image is obtained from the 'description' property.
     analysis = response.json()
     # Retrieve Text out of Microsoft response
     text = ''
